@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+:root {
+    --header-height: 3.5rem;
+    
+    --first-color: hsl(220, 68%, 54%);
+    --first-color-lighten: hsl(220, 68%, 97%);
+    --title-color: hsl(220, 48%, 28%);
+    --text-color: hsl(220, 12%, 45%);
+    --body-color: hsl(220, 100%, 99%);
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Noto Sans Thai", sans-serif;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --z-tooltip: 10;
+    --z-fixed: 50;
+  }
+
+html{
+    background-color: #f0f0f0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: calc(min(95rem, 95%));
+    margin-inline: 1.5rem;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.banner{
+    margin-top: var(--header-height);
+}
+.backgroung__{
+    background-image: url('/bg_bn.jpg');
+    
+}
+
+@media screen and (min-width: 1118px) {
+    .banner{
+        margin-top: calc(var(--header-height) + 2rem);
+    }
+}
