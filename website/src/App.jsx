@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import Navbar from "./components/Navbar/Navbar"
 import Carousel from "./components/Carousel/Carousel"
-
+import Footpage from "./components/Footpage/Footpage"
 function App() {
   useEffect(()=>{
     document.title = "โรงพยาบาลลานกระบือ"
@@ -16,6 +16,7 @@ function App() {
             </div>
           </div>
       </div>
+      <Footpage/>
     </>
   )
 }

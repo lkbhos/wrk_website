@@ -27,7 +27,7 @@ html{
     box-sizing: border-box;
 }
 .container {
-    width: calc(min(95rem, 95%));
+    width: 95%;
     margin-inline: 1.5rem;
 }
 ul {
@@ -43,9 +43,12 @@ a {
     background-image: url('/bg_bn.jpg');
     
 }
-
 @media screen and (min-width: 1118px) {
     .banner{
         margin-top: calc(var(--header-height) + 2rem);
+    }
+    .container {
+        width: calc(min(85rem, 85%));
+        margin-inline: 1.5rem;
     }
 }

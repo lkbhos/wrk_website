@@ -5,22 +5,24 @@
     min-height: 65vh;
     padding-block: min(20vh, 3rem);
 }
-@media screen and (min-width: 48rem) {
+
+@media screen and (min-width: 69.875rem) {
     .carousel{
         display: flex;
         align-items: center;
+        width: calc(min(85rem, 85%));
     }
 }
 .carousel-content span{
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    font-size: 1.25rem;
+    font-size: clamp(0.9rem, 0.822rem + 0.3567vw, 1.25rem);
     color: #717171;
 }
 .carousel-content h1{
     text-transform: capitalize;
     letter-spacing: 0.8px;
-    font-size: 4rem;
+    font-size: clamp(3rem, 2.7771rem + 1.0191vw, 4rem);
     line-height: 1.1;
     background-color: #056839;
     background-image: linear-gradient(45deg, #056839, #000);
@@ -64,7 +66,7 @@
     transform: translateY(25%);
     letter-spacing: 2px;
     color: #717171;
-    font-size: clamp(0.75rem, 0.7054rem + 0.2038vw, 0.95rem);
+    font-size: clamp(0.6rem, 0.522rem + 0.3567vw, 0.95rem);
 }
 .carousel-content hr{
     display: block;
@@ -77,7 +79,7 @@
 .carousel-content p {
     line-height: 1.6;
     letter-spacing: 2px;
-    font-size: 1rem;
+    font-size: clamp(0.6rem, 0.5108rem + 0.4076vw, 1rem);
     margin-bottom: 1rem;
 }
 .slider-btn{

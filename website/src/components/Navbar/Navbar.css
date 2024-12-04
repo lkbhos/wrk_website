@@ -27,6 +27,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 1.25rem;
 }
 .nav__logo {
   display: inline-flex;
@@ -44,10 +45,10 @@ body {
 }
 .nav__logo .name_logo{
   border-bottom: 2px solid hsl(220, 48%, 28%);
-  font-size: 1rem;
+  font-size: clamp(0.85rem, 0.82rem + 0.15vw, 1rem);
 }
 .nav__logo .sname_logo{
-  font-size: .9rem;
+  font-size: clamp(0.8rem, 0.78rem + 0.1vw, 0.9rem);
 }
 .nav__logo:hover {
   color: hsl(220, 68%, 54%);
@@ -56,6 +57,7 @@ body {
   position: relative;
   width: 32px;
   height: 32px;
+  
 }
 .nav__toggle-menu, .nav__toggle-close {
   font-size: 1.25rem;
