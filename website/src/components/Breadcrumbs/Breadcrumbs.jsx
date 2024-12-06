@@ -4,7 +4,7 @@ import { useLocation, Link } from 'react-router-dom';
 const Breadcrumbs = () => {
   const location = useLocation();
   const pathnames = location.pathname.split('/').filter((x) => x);
-  if (location.pathname === '/') {
+  if (location.pathname === '/' || location.pathname === '/unauthorized') {
     return null;
   }
   return (

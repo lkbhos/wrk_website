@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
 :root {
     --header-height: 3.5rem;
-    
     --first-color: hsl(220, 68%, 54%);
     --first-color-lighten: hsl(220, 68%, 97%);
     --title-color: hsl(220, 48%, 28%);
@@ -16,8 +15,7 @@
     --font-semi-bold: 600;
     --z-tooltip: 10;
     --z-fixed: 50;
-  }
-
+}
 html{
     background-color: #f0f0f0;
 }
@@ -69,9 +67,11 @@ a {
         width: calc(min(100rem, 100%)); 
     }
 }
+
 .moit_content .hero{
     width: 100%;
     max-height: 20vh;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .hero-content {
     display: flex;

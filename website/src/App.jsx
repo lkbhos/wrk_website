@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { HelmetProvider } from 'react-helmet-async';
 import Navbar from "./components/Navbar/Navbar"
 import Footpage from "./components/Footpage/Footpage"
-import Home from "./pages/home";
-import Moit from "./pages/moit";
-import Unauthorized from './pages/Unauthorized';
+import Home from "./pages/Home/Home";
+import Moit from "./pages/Moit/Moit";
+import Unauthorized from './pages/Unauthorized/Unauthorized';
 import Breadcrumbs from './components/Breadcrumbs/Breadcrumbs';
 function App() {
   return (
