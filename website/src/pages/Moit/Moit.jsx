@@ -1,19 +1,42 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Helmet } from 'react-helmet-async';
 import './Moit.css'
 import moits from './data.json'
 import { useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
+import axios from 'axios'
+
 const moit = () => {
+  const { id } = useParams()
+  const navigate = useNavigate()
   const [isopen, setIsOpen] = useState(false)
   const [clicked, setClicked] = useState(null)
   const [clicksubmenu, setClickSubmenu] = useState(null)
   const opentoggle = () => {
     setIsOpen(!isopen)
-}
+ }
+ const [moit , setMoit] = useState([])
+ useEffect(()=>{
+     const fetchdata = async () => {
+      try{
+        const [res1] = await Promise.all([
+          axios.get(import.meta.env.VITE_API_URL+'/moit/'+id)
+        ])
+        console.log(res1.status)
+        if(res1.status == null){
+          navigate('/unauthorized')
+        }
+        setMoit(res1.data)
+      }catch(err){
+        navigate('/unauthorized')
+      }
+     }
+     fetchdata()
+ },[])
   return (
     <div>
       <Helmet>
-            <title>โรงพยาบาลลานกระบือ | MOIT68</title>
+            <title>โรงพยาบาลลานกระบือ | MOIT{id}</title>
             <meta name="title" content="โรงพยาบาลลานกระบือ" />
             <meta name="description" content="โรงพยาบาลลานกระบือ 62 หมู่ 6 ตำบลลานกระบือ อำเภอลานกระบือ จังหวัดกำแพงเพชร 62170" />
             <meta property="og:type" content="website" />
@@ -28,14 +51,14 @@ const moit = () => {
                   <div className='hero-content'>
                      <div className='moit__head'>
                         <h2>MITAS (MOPH Integrity and Transparency Assessment System)</h2>
-                        <h2>ปีงบประมาณ 2568</h2>
+                        <h2>ปีงบประมาณ {id}</h2>
                         <p><hr /></p>
                      </div>
                   </div>
                 </div>
                 <div className='moit__data'>
                       <ul className='moit__list '>
-                        {moits.map((moit,i)=>{
+                        {moit.map((moit,i)=>{
                           const isClicked = clicked === i
                           return(
                             <li key={moit.nums} className={`moit__items ${isClicked && "show"}`}>
@@ -46,22 +69,28 @@ const moit = () => {
                                 <div className="moit_dropdown_container">
                                   {moit.childrens.map((child,i)=>{
                                     const issubtitle = clicksubmenu === i
-                                    if(child.subtitle.length == 0){
+                                    if(child.subtitle.length == 0 && child.check != 'disabled'){
                                         return(
                                           <div key={child.title} className="moit__group">
-                                            <p className='notsub__hov'><a href="#">{child.title}</a></p>
+                                            <p className='notsub__hov'><a href={child.path} className='use'><p>{child.nums}.</p><p>{child.title}</p></a></p>
+                                          </div>
+                                        )
+                                    }else if(child.subtitle.length == 0 && child.check == 'disabled'){
+                                        return(
+                                          <div key={child.title} className="moit__group">
+                                            <p className='notsub__hov disabled'><a href="/"><p>{child.nums}.</p><p>{child.title}</p></a></p>
                                           </div>
                                         )
                                     }else{
                                       return(
                                         <div className="moit__group">
                                         <div className={`moit__group_fade ${issubtitle && "show"}`}>
-                                          <div className='moit__title' onClick={() => setClickSubmenu(issubtitle ? null : i)}><p>{child.title}</p><i class="ri-arrow-down-s-line arr-sub"></i></div>
+                                          <div className='moit__title' onClick={() => setClickSubmenu(issubtitle ? null : i)}><div className='moit__group_txt'><p>{child.nums}.</p><p>{child.title}</p></div><i class="ri-arrow-down-s-line arr-sub"></i></div>
                                           <div className='moit_title__'>
                                               <ul className='moit__group_list'>
                                                   {child.subtitle.map((subtitle,i)=>{
                                                    return(
-                                                    <li ><a href="#"><i class="ri-arrow-right-s-fill"></i>{subtitle.title}</a></li>
+                                                    <li><a href={subtitle.path}><p><i class="ri-arrow-right-s-fill"></i>{subtitle.nums}</p><p>{subtitle.title}</p></a></li>
                                                    )
                                                   })}
                                               </ul>

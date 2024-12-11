@@ -26,7 +26,7 @@ const Breadcrumbs = () => {
                   <Link to={to} style={{ textDecoration: 'none', color: '#056839' }}>
                     {decodeURIComponent(value)}
                   </Link>
-                  <span style={{ margin: '0 5px', color: '#056839' }}>{'>'}</span>
+                  <span style={{ margin: '0 5px', color: '#056839' }}>{<i class="ri-arrow-right-double-line"></i>}</span>
                 </>
               ) : (
                 <p style={{ color: '#056839' }}>{decodeURIComponent(value)}</p>

@@ -16,7 +16,7 @@ function App() {
             <div className="bread__"><Breadcrumbs /></div>
             <Routes>
                 <Route path="/" element={<Home/>}/>
-                <Route path="/moit" element={<Moit/>}/>
+                <Route path="/moit/:id" element={<Moit/>}/>
                 <Route path="*" element={<Navigate to="/unauthorized" />} />
                 <Route path="/unauthorized" element={<Unauthorized />} />
               </Routes>

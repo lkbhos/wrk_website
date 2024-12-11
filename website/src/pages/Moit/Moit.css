@@ -44,7 +44,19 @@
     padding: 0.15rem 0;
 }
 .moit__group p{
-    font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
+    font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);  
+}
+.moit__group .moit__group_txt{
+    display: flex;
+}
+.moit__group .moit__group_txt p:last-child{
+    padding-left:2px;
+}
+.moit__group p a{
+    display: flex; 
+}
+.moit__group p a p:last-child{
+    padding-left:2px;
 }
 .moit__group:last-child{
     border-bottom: none;
@@ -57,6 +69,15 @@
 }
 .moit_dropdown_container .moit__group .notsub__hov:hover a{
     color: #056839;
+}
+.moit_dropdown_container .moit__group .notsub__hov{
+    color: rgb(94, 94, 94);
+}
+.moit_dropdown_container .moit__group .notsub__hov.disabled{
+    color: rgb(94, 94, 94);
+    text-decoration: line-through;
+    cursor: default;
+    pointer-events: none;
 }
 .moit_dropdown_container .moit__group .moit__group_fade .moit__title{
     display: flex;
@@ -94,13 +115,19 @@
 }
 .moit__group_fade ul li{
     border-bottom: 1px dotted silver;
-    padding: 0.15rem 0;
+    padding: 0.15rem 0.35rem 0 0;
 }
+
 .moit__group_fade ul li:last-child{
     border-bottom: none;
 }
 .moit__group_fade ul li a{
     font-size: clamp(0.67rem, 0.614rem + 0.28vw, 0.95rem);
+    display: flex;
+}
+
+.moit__group_fade ul li a p:last-child{
+    margin-left: 2px;
 }
 .moit__group_fade ul li a:hover{
     color: #056839;
