@@ -67,13 +67,13 @@ const moit = () => {
                                 <div className="moit_dropdown_container">
                                   {moit.childrens.map((child,i)=>{
                                     const issubtitle = clicksubmenu === i
-                                    if(child.subtitle.length == 0 && child.check != 'disabled'){
+                                    if(child.subtitle.length == 0 && child.make_by != 'sso'){
                                         return(
                                           <div key={child.title} className="moit__group">
                                             <p className='notsub__hov'><a href={child.path+child.fc_year+'/'+child._id} className='use'><p>{child.nums}.</p><p>{child.title}</p></a></p>
                                           </div>
                                         )
-                                    }else if(child.subtitle.length == 0 && child.check == 'disabled'){
+                                    }else if(child.subtitle.length == 0 && child.make_by == 'sso'){
                                         return(
                                           <div key={child.title} className="moit__group">
                                             <p className='notsub__hov disabled'><a href="/"><p>{child.nums}.</p><p>{child.title}</p></a></p>
