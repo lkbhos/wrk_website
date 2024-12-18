@@ -1,0 +1,12 @@
+nav[aria-label="breadcrumb"] {
+    font-size: clamp(0.48rem, 0.406rem + 0.37vw, 0.85rem);
+}
+nav[aria-label="breadcrumb"] ul{
+    display: flex;
+}
+nav[aria-label="breadcrumb"] ul li {
+    color: black; 
+}
+nav[aria-label="breadcrumb"] ul li:hover {
+    color: black; 
+}

@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+:root {
+    --header-height: 3.5rem;
+    --first-color: hsl(220, 68%, 54%);
+    --first-color-lighten: hsl(220, 68%, 97%);
+    --title-color: hsl(220, 48%, 28%);
+    --text-color: hsl(220, 12%, 45%);
+    --body-color: hsl(220, 100%, 99%);
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Noto Sans Thai", sans-serif;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --z-tooltip: 10;
+    --z-fixed: 50;
+}
+html{
+    background-color: #f0f0f0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+}
+
+.container {
+    width: 95%;
+    margin-inline: 1.5rem;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container__content{
+    margin-top: var(--header-height);
+}
+
+.backgroung__{
+    background-image: url('/bg_bn.jpg');
+    
+}
+@media screen and (min-width: 1118px) {
+    .container__content{
+        margin-top: calc(var(--header-height) + 2rem);
+    }
+    .container {
+        width: calc(min(85rem, 85%));
+        margin-inline: 1.5rem;
+    }
+    .bread__{
+        width: calc(min(85rem, 85%));
+        margin: 0 auto; 
+    }
+    .contents__container{
+        position: relative;
+        width: calc(min(85rem, 85%)); 
+        margin: 0 auto;
+    }
+
+
+}
+@media screen and (max-width: 1117px) {
+    .contents__container{
+        width: calc(min(100rem, 100%)); 
+    }
+}
+
+.contents__container .hero{
+    width: 100%;
+    max-height: 20vh;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 0;
+}
+.hero-content .moit__head{
+    width: 100%;
+    height: 100%;
+}
+.hero-content .moit__head h2{
+   text-align: center;
+   font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
+}
+.hero-content  hr{
+    margin: 0 auto;
+    width: 50%;
+    display: block;
+    border: none;
+    height: 1px;
+    background: #0071B9;
+    background: linear-gradient(to right, white, #0071B9, #26ABFF, #0071B9, white);
+}
+.pdfviewer__content{
+    padding: 1rem 0 ;
+    margin-bottom: 0.5rem;
+}
+.pdfviewer__content .loading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 20vh;
+}
+.pdfviewer__content .loading p{
+    text-align: center;
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 90px;
+    height: 14px;
+    background: radial-gradient(circle closest-side,#000 92%,#0000) calc(100%/3) 0/calc(100%/4) 100%;
+    animation: l2 0.5s infinite linear;
+  }
+  @keyframes l2 {
+      100% {background-position: 0 0}
+  }
+.pdfviewer__content .pdfviewer__items{
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+}
+.pdfviewer__content .pdfviewer__items .pdfviewer__group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pdfviewer__content .pdfviewer__items div .page__nums .hr-text{
+    line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  margin-bottom: 0.20rem;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: .5;
+  &:before {
+    content: '';
+    background: linear-gradient(to right, transparent, #777474, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+  }
+  &:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+
+    padding: 0 .5em;
+    line-height: 1.5em;
+    
+    color: #080808;
+    background-color: #f1f1f1;
+  }
+}
+.pdfviewer__content .pdfviewer__items img{
+    width: 97%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+

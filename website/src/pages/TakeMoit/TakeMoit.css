@@ -1,0 +1,55 @@
+.takemoit__head{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.60rem;
+}
+.takemoit__head p{
+    font-size: clamp(0.67rem, 0.554rem + 0.58vw, 1.25rem);
+    text-align: center;
+}
+.takemoit__head p:first-child{
+    font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
+    font-weight: 600;
+}
+.moit_images__content{
+    padding: 1rem 0 ;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.moit_images__content .moit_images_items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.moit_images__content .moit_images_items img{
+    width: 97%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.credit_moit{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.85rem;
+    padding: 0 1rem;
+}
+.credit_moit p{
+    color: rgb(75, 74, 74);
+    font-size: clamp(0.6rem, 0.52rem + 0.4vw, 1rem);
+}
+.credit_moit button {
+    background-color: #056839;
+    cursor: pointer;
+    padding: 0.25rem;
+    color: #fff;
+    border-radius: 10px;
+    font-size: clamp(0.55rem, 0.49rem + 0.3vw, 0.85rem);
+    transition: 0.7s ease-in-out;
+    border: 1px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.credit_moit button:hover{
+    background-color: #e9eeec;
+    color: #056839;
+    border: 1px solid #056839;
+}
