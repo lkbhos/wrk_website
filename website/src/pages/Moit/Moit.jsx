@@ -70,7 +70,7 @@ const moit = () => {
                                     if(child.subtitle.length == 0 && child.check != 'disabled'){
                                         return(
                                           <div key={child.title} className="moit__group">
-                                            <p className='notsub__hov'><a href={child.path} className='use'><p>{child.nums}.</p><p>{child.title}</p></a></p>
+                                            <p className='notsub__hov'><a href={child.path+child.fc_year+'/'+child._id} className='use'><p>{child.nums}.</p><p>{child.title}</p></a></p>
                                           </div>
                                         )
                                     }else if(child.subtitle.length == 0 && child.check == 'disabled'){

@@ -37,6 +37,9 @@ const childrenSchema = mongoose.Schema({
     "pdfurl":{
         type : String
     },
+    "check":{
+        typr: String
+    },
     "fc_year":{
         type : String
     },

@@ -52,12 +52,13 @@ const TakeMoit = () => {
   return (
     <div>
         {data.map((item)=>{
-            const pdfUrl = import.meta.env.VITE_API_URL+'/files/'+item.childrens.subtitle.pdfurl
-            const filename = item.childrens.subtitle.nums+"_moit_11234.pdf"
+            const namepdf = item.childrens.subtitle.pdfurl || item.childrens.pdfurl
+            const pdfUrl = import.meta.env.VITE_API_URL+'/files/'+namepdf
+            const filename = item.childrens.nums||item.childrens.subtitle.nums+"_moit_11234.pdf"
             return(
             <div>
                 <Helmet>
-                    <title>{data[0].childrens.subtitle.title || 'Default Title'}</title>
+                    <title>{data[0].childrens.subtitle.title || data[0].childrens.title ||'Default Title'}</title>
                     <meta name="title" content="โรงพยาบาลลานกระบือ" />
                     <meta name="description" content="โรงพยาบาลลานกระบือ 62 หมู่ 6 ตำบลลานกระบือ อำเภอลานกระบือ จังหวัดกำแพงเพชร 62170" />
                     <meta property="og:type" content="website" />
@@ -71,14 +72,14 @@ const TakeMoit = () => {
                         <div className='hero' style={{ backgroundImage: `url(${import.meta.env.VITE_API_URL+'/images/bg_head.jpg'})` }}>
                             <div className='hero-content'>
                                 <div className='takemoit__head'>
-                                    <p>ข้อที่ {item.childrens.subtitle.nums}</p>
-                                    <p>{item.childrens.subtitle.title}</p>
+                                    <p>ข้อที่ {item.childrens.nums || item.childrens.subtitle.nums}</p>
+                                    <p>{item.childrens.title || item.childrens.subtitle.title}</p>
                                 </div>
                             </div>
                         </div>
                         <PdfFromUrl pdfUrl={pdfUrl}/>
                         <div className='credit_moit'>
-                            <p>โดย. {item.childrens.subtitle.make_by}</p>
+                            <p>โดย. {item.childrens.make_by|| item.childrens.subtitle.make_by}</p>
                             <button onClick={() => handleDownload(pdfUrl,filename)}><i class="ri-download-cloud-line"></i> ดาวน์โหลดไฟล์</button>
                         </div>
                     </div>

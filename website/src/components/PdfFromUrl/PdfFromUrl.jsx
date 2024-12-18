@@ -50,18 +50,26 @@ const PdfFromUrl = ({ pdfUrl }) => {
     <div className="pdfviewer__content">
       {loading ? (
         <div className="loading"><p>กำลังโหลดภาพ</p><p><div class="loader"></div></p></div>
-      ) : (
-        <div className="pdfviewer__items">
-          {images.map(({ page, src }) => (
-            <div>
-              <div className="page__nums"><hr className="hr-text" data-content={page}/></div>
-              <div className="pdfviewer__group">
-                <img key={page} src={src} alt={`Page ${page}`} />
+      ) :  (
+        images.length > 0 ? (
+          <div className="pdfviewer__items">
+            {images.map(({ page, src }) => (
+              <div key={page}>
+                <div className="page__nums">
+                  <hr className="hr-text" data-content={page} />
+                </div>
+                <div className="pdfviewer__group">
+                  <img src={src} alt={`Page ${page}`} />
+                </div>
               </div>
-            </div>
-            
-          ))}
-        </div>
+            ))}
+          </div>
+        ) : (
+          <div className="no-data">
+            <p><div class="loaders"></div></p>
+            <p>ไม่มีข้อมูล</p>
+          </div>
+        )
       )}
     </div>
   );
