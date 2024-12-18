@@ -22,7 +22,6 @@ services:
     environment:
       MONGO_URI: mongodb://lkbhos:lkbh11234@mongodb:27017/lkbhosdb
     volumes:
-      - ./server/images:/app/images
       - ./server/files:/app/files
     depends_on:
       - mongodb

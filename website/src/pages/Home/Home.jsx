@@ -12,7 +12,7 @@ const home = () => {
             <meta property="og:url" content="https://lkbhos.moph.go.th/" />
             <meta property="og:title" content="โรงพยาบาลลานกระบือ" />
             <meta property="og:description" content="โรงพยาบาลลานกระบือ 62 หมู่ 6 ตำบลลานกระบือ อำเภอลานกระบือ จังหวัดกำแพงเพชร 62170" />
-            <meta property="og:image" content="https://lkbhos.moph.go.th/api/images/lkbhos.jpg" /> 
+            <meta property="og:image" content="https://lkbhos.moph.go.th/api/files/lkbhos.jpg" /> 
         </Helmet>
         <div className="content">
                 <div className="banner">

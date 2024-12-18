@@ -7,24 +7,24 @@ const Footpage = () => {
             <div className="footer__contact">
                 <div className="contact__items">
                     <div className='contact__list'>
-                        <img src={import.meta.env.VITE_API_URL+'/images/call_phone.png'} alt="call_img" />
+                        <img src={import.meta.env.VITE_API_URL+'/files/call_phone.png'} alt="call_img" />
                          <p>1669 หรือ 055-769-086 ต่อ 140</p>
                         <p>ฉุกเฉิน เรียกรถพยาบาล</p>
                         <span>พร้อมบริการทุกวัน 24 ชม.</span>
                     </div>
                     <div className='contact__list'>
-                        <img src={import.meta.env.VITE_API_URL+'/images/tell.png'} alt="call_img" />
+                        <img src={import.meta.env.VITE_API_URL+'/files/tell.png'} alt="call_img" />
                         <p>โทรหาโรงพยาบาล</p>
                         <p>055-769-086</p>
                         <span>บริการทุกวันจันทร์-ศุกร์ เวลา 08.30-16.30</span>
                     </div>
                     <div className='contact__list'>
-                        <img src={import.meta.env.VITE_API_URL+'/images/mail.png'} alt="call_img" />
+                        <img src={import.meta.env.VITE_API_URL+'/files/mail.png'} alt="call_img" />
                         <p>สอบถามข้อมูลเพิ่มเติมผ่าน E-mail</p>
                         <p>lkbhos.kp@gmail.com</p>
                     </div>
                     <div className='contact__list'>
-                        <img src={import.meta.env.VITE_API_URL+'/images/loca.png'} alt="call_img" />
+                        <img src={import.meta.env.VITE_API_URL+'/files/loca.png'} alt="call_img" />
                         <p>แผนที่โรงพยาบาล</p>
                         <a href="#">ดูแผนที่</a>
                     </div>
