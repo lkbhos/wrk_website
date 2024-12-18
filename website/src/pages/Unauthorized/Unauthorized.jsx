@@ -1,10 +1,11 @@
 import React from 'react'
-
+import './Unauthorized.css'
 const Unauthorized = () => {
   return (
-    <div style={{ textAlign: 'center', marginTop: '50px' }}>
-        <h1>401 - Unauthorized</h1>
-        <p>You are not authorized to access this page.</p>
+    <div className='err-container'>
+        <div className='err-content'>
+          <p>401 <span>Unauthorized</span></p>
+        </div>
     </div>
   )
 }

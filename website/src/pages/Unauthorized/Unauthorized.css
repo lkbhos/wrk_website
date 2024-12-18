@@ -1,0 +1,19 @@
+.err-container{
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+.err-container .err-content{
+    width: 60%;
+    max-height: 60vh;
+    text-align: center;
+}
+.err-container .err-content p{
+    font-size: clamp(1rem, 0.3rem + 3.5vw, 4.5rem);
+    color: rgb(131, 131, 130);
+}
+.err-container .err-content p span{
+    border-left: 3px solid rgb(131, 131, 130);
+    padding: 0 0 0 1rem;
+}
