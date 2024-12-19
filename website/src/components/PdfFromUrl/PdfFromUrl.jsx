@@ -32,7 +32,7 @@ const PdfFromUrl = ({ pdfUrl }) => {
 
           await page.render(renderContext).promise;
 
-          imageList.push({ page: i, src: canvas.toDataURL("image/png") });
+          imageList.push({ page: i, src: canvas.toDataURL("image/webp") });
         }
 
         setImages(imageList);

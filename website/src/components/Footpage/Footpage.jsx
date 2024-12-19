@@ -26,7 +26,7 @@ const Footpage = () => {
                     <div className='contact__list'>
                         <img src={import.meta.env.VITE_API_URL+'/files/loca.png'} alt="call_img" />
                         <p>แผนที่โรงพยาบาล</p>
-                        <a href="#">ดูแผนที่</a>
+                        <a href="/contact">ดูแผนที่</a>
                     </div>
                 </div>
             </div>
