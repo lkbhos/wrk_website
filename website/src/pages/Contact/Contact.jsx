@@ -30,10 +30,12 @@ const Contact = () => {
                 </div>
                 <div className='section__main'>
                     <p>เบอร์โทรภายในองค์กร</p>
+                    <p><hr /></p>
                 </div>
+                <div><p>*โทรศัพท์ตอบรับอัติโนมัติ โทร 055-769-086 หรือ 055-769-226 (ต่อ)</p></div>
                 <div className='phone__group'>
                     <div className='phone__list'>
-                        <div className='phone__main'>
+                        <div className='phone__main'style={{background: '#af976d'}}>
                             <p>ตึกอำนวยการ</p><small> (กด 201 ก่อน)</small>
                         </div>
                         <div className='phone__items'>
@@ -62,7 +64,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className='phone__list'>
-                        <div className='phone__main'>
+                        <div className='phone__main'style={{background: '#056839'}}>
                             <p>กลุ่มภารกิจด้านการพยาบาล</p>
                         </div>
                         <div className='phone__items'>
@@ -107,7 +109,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className='phone__list'>
-                        <div className='phone__main'>
+                        <div className='phone__main' style={{background: '#0bb288'}}>
                             <p>กลุ่มงานทางการแพทย์</p>
                         </div>
                         <div className='phone__items'>
@@ -164,7 +166,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className='phone__list'>
-                        <div className='phone__main'>
+                        <div className='phone__main' style={{background: '#a16d63'}}>
                             <p>กลุ่มเวชปฏิบัติครอบครัว</p>
                         </div>
                         <div className='phone__items'>
@@ -185,7 +187,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className='phone__list'>
-                        <div className='phone__main'>
+                        <div className='phone__main' style={{background: '#646569'}}>
                             <p>กลุ่มงานเทคนิคบริการ</p>
                         </div>
                         <div className='phone__items'>

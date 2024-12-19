@@ -22,8 +22,20 @@
 .contact__map{
   margin-bottom: 2rem;
 }
+.contact__content .section__main {
+    text-align: center;
+}
 .contact__content .section__main p{
     font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+    margin-bottom: 2px;
+}
+.contact__content .section__main hr{
+    width: 15%;
+    margin: 0 auto;
+    display: block;
+    border: none;
+    height: 3px;
+    background: #056839;
 }
 .phone__group{
     display: grid;
@@ -42,7 +54,6 @@
 }
 .phone__group .phone__list .phone__main{
     border-bottom: 1px solid silver;
-    background-color: #056839;
     padding: 5px 0;
     display: flex;
     justify-content: center;
