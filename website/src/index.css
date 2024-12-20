@@ -36,6 +36,9 @@ ul {
 a {
     text-decoration: none;
 }
+ol {
+	list-style: none;
+  }
 .container__content{
     margin-top: var(--header-height);
 }

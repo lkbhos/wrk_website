@@ -9,6 +9,7 @@ import Unauthorized from './pages/Unauthorized/Unauthorized';
 import Breadcrumbs from './components/Breadcrumbs/Breadcrumbs';
 import TakeMoit from "./pages/TakeMoit/TakeMoit";
 import Contact from "./pages/Contact/Contact";
+import Department_leader from "./pages/Department_leader/Department_leader";
 function App() {
   return (
     <HelmetProvider>
@@ -21,6 +22,7 @@ function App() {
                 <Route path="/moit/:id" element={<Moit/>}/>
                 <Route path="/takemoit/:id/:name" element={<TakeMoit/>}/>
                 <Route path="/contact" element={<Contact/>}/>
+                <Route path="/department" element={<Department_leader/>}/>
                 <Route path="*" element={<Navigate to="/unauthorized" />} />
                 <Route path="/unauthorized" element={<Unauthorized />} />
               </Routes>
