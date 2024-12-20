@@ -10,6 +10,7 @@ import Breadcrumbs from './components/Breadcrumbs/Breadcrumbs';
 import TakeMoit from "./pages/TakeMoit/TakeMoit";
 import Contact from "./pages/Contact/Contact";
 import Department_leader from "./pages/Department_leader/Department_leader";
+import Flow from "./pages/Flow/Flow";
 function App() {
   return (
     <HelmetProvider>
@@ -23,6 +24,7 @@ function App() {
                 <Route path="/takemoit/:id/:name" element={<TakeMoit/>}/>
                 <Route path="/contact" element={<Contact/>}/>
                 <Route path="/department" element={<Department_leader/>}/>
+                <Route path="/flow" element={<Flow/>}/>
                 <Route path="*" element={<Navigate to="/unauthorized" />} />
                 <Route path="/unauthorized" element={<Unauthorized />} />
               </Routes>
