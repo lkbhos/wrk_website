@@ -12,10 +12,11 @@
   .department_main p{
     font-size: clamp(1.2rem, 1.04rem + 0.8vw, 2rem);
     font-weight: 700;
+	color: var(--main-color);
   }
   /* LEVEL-1 STYLES
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .level-1 {
+  .department_container .level-1 {
 	width: 275px;
 	max-height: 50vh;
 	border-radius: 15px;
@@ -24,7 +25,7 @@
     background-color: #fff;
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
-  .level-1 .card__img{
+  .department_container .level-1 .card__img{
     background-color: #fff;
 	border: 10px solid #056839;
 	width: 110px;
@@ -37,17 +38,17 @@
 	position: absolute;
 	transform: translate(80%, -60%);
   }
-  .level-1 .card__img img{
+  .department_container .level-1 .card__img img{
 	width: 100%; 
     height: 100%; 
     object-fit: cover; 
   }
-  .level-1 .card__name{
+  .department_container .level-1 .card__name{
 	padding: 50px 0 10px 0;
 	width: 100%;
     text-align: center;
   }
-  .level-1 .card__phone{
+  .department_container .level-1 .card__phone{
 	color: #fff;
     text-align: center;
 	width: 100%;
@@ -57,7 +58,7 @@
 	border-bottom-right-radius: 15px;
   }
   
-  .level-1::before {
+  .department_container .level-1::before {
 	content: "";
 	position: absolute;
 	top: 100%;
@@ -70,7 +71,7 @@
   
   
   
-  .level-2-wrapper {
+  .department_container .level-2-wrapper {
 	margin-top: 120px;
 	position: relative;
 	display: grid;
@@ -79,7 +80,7 @@
     
   }
   
-  .level-2-wrapper::before {
+  .department_container .level-2-wrapper::before {
 	content: "";
 	position: absolute;
 	top: -90px;
@@ -88,7 +89,7 @@
 	height: 2px;
 	background: #056839;
   }
-  .level-2-wrapper:last-child:before {
+  .department_container .level-2-wrapper:last-child:before {
 	content: "";
 	position: absolute;
 	top: -90px;
@@ -98,7 +99,7 @@
 	background: #056839;
   }
   
-  .level-2-wrapper::after {
+  .department_container .level-2-wrapper::after {
 	display: none;
 	content: "";
 	position: absolute;
@@ -109,12 +110,12 @@
 	background: #056839;
   }
   
-  .level-2-wrapper li {
+  .department_container .level-2-wrapper li {
 	position: relative;
     
   }
   
-  .level-2-wrapper > li::before {
+  .department_container .level-2-wrapper > li::before {
 	content: "";
 	position: absolute;
 	bottom: 100%;
@@ -125,7 +126,7 @@
 	background: #056839;
   }
   
-  .level-2 {
+  .department_container .level-2 {
 	margin-top: 10px;
 	width: 275px;
 	max-height: 50vh;
@@ -135,7 +136,7 @@
 	background-color: #fff;
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
-  .level-2 .card__img{
+  .department_container .level-2 .card__img{
 	border: 10px solid #0bb288;
     background-color: #fff;
 	width: 110px;
@@ -148,17 +149,17 @@
 	position: absolute;
 	transform: translate(80%, -60%);
   }
-  .level-2 .card__img img{
+  .department_container .level-2 .card__img img{
 	width: 100%; 
     height: 100%; 
     object-fit: cover; 
   }
-  .level-2 .card__name{
+  .department_container .level-2 .card__name{
 	padding: 50px 0 10px 0;
 	width: 100%;
     text-align: center;
   }
-  .level-2 .card__phone{
+  .department_container .level-2 .card__phone{
     text-align: center;
 	color: #fff;
 	width: 100%;
@@ -168,7 +169,7 @@
 	border-bottom-right-radius: 15px;
   }
   
-  .level-2::after {
+  .department_container .level-2::after {
 	display: none;
 	content: "";
 	position: absolute;
@@ -187,48 +188,48 @@
   @media screen and (max-width: 1117px) {
 	
   
-	.level-1,
-	.level-2 {
+	.department_container .level-1,
+	.department_container .level-2 {
 	  width: 100%;
 	}
-	.level-1 .card__img{
+	.department_container .level-1 .card__img{
 		transform: translate(30vw, -60%);
 	}
   
-	.level-1 {
+	.department_container .level-1 {
 	  margin-bottom: 20px;
 	}
   
-	.level-1::before,
-	.level-2-wrapper > li::before {
+	.department_container .level-1::before,
+	.department_container .level-2-wrapper > li::before {
 	  display: none;
 	}
 	
-	.level-2-wrapper,
-	.level-2::after {
+	.department_container .level-2-wrapper,
+	.department_container .level-2::after {
 	  display: block;
 	}
   
-	.level-2-wrapper {
+	.department_container .level-2-wrapper {
 	  width: 90%;
 	  margin-left: 10%;
 	  margin-top: 90px;
 	}
   
-	.level-2-wrapper::before {
+	.department_container .level-2-wrapper::before {
 	  left: -20px;
 	  width: 2px;
 	  height: calc(100% + 105px);
 	}
-	.level-2-wrapper:last-child::before {
+	.department_container .level-2-wrapper:last-child::before {
 		left: -20px;
 		width: 2px;
 		height: calc(100% + 20px);
 	  }
-	.level-2-wrapper > li{
+	  .department_container .level-2-wrapper > li{
 		margin-bottom: 90px;
 	}
-	.level-2-wrapper > li:not(:first-child) {
+	.department_container .level-2-wrapper > li:not(:first-child) {
 	  margin-top: 50px;
 	}
 	
