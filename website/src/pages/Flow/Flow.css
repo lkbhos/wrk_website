@@ -241,15 +241,15 @@
         height: calc(100% + 290px);
       }
   }
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 767px) {
     .flow__container .level-2-wrapper::before {
         margin-top: 10px;
         left: -25px;
         width: 2px;
-        height: calc(100% + 285px);
+        height: calc(100% + 288px);
       }
   }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 424px) {
     .flow__container .level-2-wrapper::before {
         margin-top: 10px;
         left: -25px;
