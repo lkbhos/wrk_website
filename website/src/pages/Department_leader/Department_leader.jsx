@@ -30,7 +30,7 @@ const Department_leader = () => {
             <ol class="level-2-wrapper">
                 <li>
                     <div className="level-2 rectangle">
-                        <div className="card__img"><img src={import.meta.env.VITE_API_URL+'/files/pimpa.jpg'} alt="img" /></div>
+                        <div className="card__img"><div className='inline__'><img src={import.meta.env.VITE_API_URL+'/files/pimpa.jpg'} alt="img" /></div></div>
                         <div className="card__name">
                             <h4>นางสาวพิมพา แออ่วม</h4>
                             <p>กลุ่มการพยาบาล</p>
@@ -42,7 +42,7 @@ const Department_leader = () => {
                 </li>
                 <li>
                     <div className="level-2 rectangle">
-                        <div className="card__img"><img src={import.meta.env.VITE_API_URL+'/files/bussaba.jpg'} alt="img" /></div>
+                        <div className="card__img"><div className='inline__'><img src={import.meta.env.VITE_API_URL+'/files/bussaba.jpg'} alt="img" /></div></div>
                         <div className="card__name">
                             <h4>นางสาวบุษบา ภูริศักดิ์ไพโรจน์</h4>
                             <p>กลุ่มบริหารงานทั่วไป</p>
@@ -54,7 +54,7 @@ const Department_leader = () => {
                 </li>
                 <li>
                     <div className="level-2 rectangle">
-                        <div className="card__img"><img src={import.meta.env.VITE_API_URL+'/files/tepparit.jpg'} alt="img" /></div>
+                        <div className="card__img"><div className='inline__'><img src={import.meta.env.VITE_API_URL+'/files/tepparit.jpg'} alt="img" /></div></div>
                         <div className="card__name">
                             <h4>นายเทพฤทธิ์ ไตรฟื้น</h4>
                             <p>กลุ่มงานทันตกรรม</p>
@@ -66,7 +66,7 @@ const Department_leader = () => {
                 </li>
                 <li>
                     <div className="level-2 rectangle">
-                        <div className="card__img"><img src={import.meta.env.VITE_API_URL+'/files/'} alt="" /></div>
+                        <div className="card__img"><div className='inline__'><img src={import.meta.env.VITE_API_URL+'/files/'} alt="" /></div></div>
                         <div className="card__name">
                             <h4>นายแพทย์สุรธัญ คำภิบาล</h4>
                             <p>กลุ่มงานการแพทย์</p>
@@ -81,7 +81,7 @@ const Department_leader = () => {
             <ol class="level-2-wrapper">
                 <li>
                     <div className="level-2 rectangle">
-                        <div className="card__img"><img src={import.meta.env.VITE_API_URL+'/files/pjed.jpg'} alt="img" /></div>
+                        <div className="card__img"><div className='inline__'><img src={import.meta.env.VITE_API_URL+'/files/pjed.jpg'} alt="img" /></div></div>
                         <div className="card__name">
                             <h4>นายมีชัย พัชนี</h4>
                             <p>กลุ่มงานเทคนิคการแพทย์</p>
@@ -93,7 +93,7 @@ const Department_leader = () => {
                 </li>
                 <li>
                     <div className="level-2 rectangle">
-                        <div className="card__img"><img src={import.meta.env.VITE_API_URL+'/files/pgo.jpg'} alt="img" /></div>
+                        <div className="card__img"><div className='inline__'><img src={import.meta.env.VITE_API_URL+'/files/pgo.jpg'} alt="img" /></div></div>
                         <div className="card__name">
                             <h4>นายสุวัฒน์ สุขขี</h4>
                             <p>กลุ่มงานเภสัชกรรม</p>
@@ -105,7 +105,7 @@ const Department_leader = () => {
                 </li>
                 <li>
                     <div className="level-2 rectangle">
-                        <div className="card__img"><img src={import.meta.env.VITE_API_URL+'/files/Ptay.jpg'} alt="" /></div>
+                        <div className="card__img"><div className='inline__'><img src={import.meta.env.VITE_API_URL+'/files/Ptay.jpg'} alt="" /></div></div>
                         <div className="card__name">
                             <h4>นางจารุสิริ อาจสม</h4>
                             <p>กลุ่มงานด้านบริการปฐมภูมิ</p>
@@ -117,7 +117,7 @@ const Department_leader = () => {
                 </li>
                 <li>
                     <div className="level-2 rectangle">
-                        <div className="card__img"><img src={import.meta.env.VITE_API_URL+'/files/dolnapan.jpg'} alt="img" /></div>
+                        <div className="card__img"><div className='inline__'><img src={import.meta.env.VITE_API_URL+'/files/dolnapan.jpg'} alt="img" /></div></div>
                         <div className="card__name">
                             <h4>นางสาวดลนภัส ป่วนสิงห์</h4>
                             <p>กลุ่มงานจิตเวช</p>
@@ -132,7 +132,7 @@ const Department_leader = () => {
             <ol class="level-2-wrapper">
                 <li>
                     <div className="level-2 rectangle">
-                        <div className="card__img"><img src={import.meta.env.VITE_API_URL+'/files/pajaw.jpg'} alt="img" /></div>
+                        <div className="card__img"><div className='inline__'><img src={import.meta.env.VITE_API_URL+'/files/pajaw.jpg'} alt="img" /></div></div>
                         <div className="card__name">
                             <h4>นางชวนพิศ น้อยม่วง</h4>
                             <p>กลุ่มงานแพทย์แผนไทย</p>
@@ -144,7 +144,7 @@ const Department_leader = () => {
                 </li>
                 <li>
                     <div className="level-2 rectangle">
-                        <div className="card__img"><img src={import.meta.env.VITE_API_URL+'/files/saranya.jpg'} alt="img" /></div>
+                        <div className="card__img"><div className='inline__'><img src={import.meta.env.VITE_API_URL+'/files/saranya.jpg'} alt="img" /></div></div>
                         <div className="card__name">
                             <h4>นางสาวศรัญญา ทิพย์ศิริ</h4>
                             <p>กลุ่มงานประกันและยุทธศาสตร์</p>
@@ -156,7 +156,7 @@ const Department_leader = () => {
                 </li>
                 <li>
                     <div className="level-2 rectangle">
-                        <div className="card__img"><img src={import.meta.env.VITE_API_URL+'/files/nam.jpg'} alt="img" /></div>
+                        <div className="card__img"><div className='inline__'><img src={import.meta.env.VITE_API_URL+'/files/nam.jpg'} alt="img" /></div></div>
                         <div className="card__name">
                             <h4>นางวิกานดา เม่นขาว</h4>
                             <p>กลุ่มงานรังสีวิทยา</p>
@@ -168,7 +168,7 @@ const Department_leader = () => {
                 </li>
                 <li>
                     <div className="level-2 rectangle">
-                        <div className="card__img"><img src={import.meta.env.VITE_API_URL+'/files/toi.jpg'} alt="img" /></div>
+                        <div className="card__img"><div className='inline__'><img src={import.meta.env.VITE_API_URL+'/files/toi.jpg'} alt="img" /></div></div>
                         <div className="card__name">
                             <h4>นางสาวภาวิณี นกทอง</h4>
                             <p>กลุ่มงานเวชกรรมฟื้นฟู</p>
@@ -183,7 +183,7 @@ const Department_leader = () => {
             <ol class="level-2-wrapper">
                 <li>
                     <div className="level-2 rectangle">
-                        <div className="card__img"><img src={import.meta.env.VITE_API_URL+'/files/whan.jpg'} alt="img" /></div>
+                        <div className="card__img"><div className='inline__'><img src={import.meta.env.VITE_API_URL+'/files/whan.jpg'} alt="img" /></div></div>
                         <div className="card__name">
                             <h4>นางสาวพรรณราย กลิ่นรุ่ง</h4>
                             <p>กลุ่มงานโภชนาศาสตร์</p>
@@ -195,7 +195,7 @@ const Department_leader = () => {
                 </li>
                 <li>
                     <div className="level-2 rectangle">
-                        <div className="card__img"><img src={import.meta.env.VITE_API_URL+'/files/kanchit.jpg'} alt="img" /></div>
+                        <div className="card__img"><div className='inline__'><img src={import.meta.env.VITE_API_URL+'/files/kanchit.jpg'} alt="img" /></div></div>
                         <div className="card__name">
                             <h4>นายครรชิต สุริโย</h4>
                             <p>กลุ่มงานดิจิทัล</p>

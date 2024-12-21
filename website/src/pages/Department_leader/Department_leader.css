@@ -84,7 +84,7 @@
 	content: "";
 	position: absolute;
 	top: -90px;
-	left: 12.25%;
+	left: 12.30%;
 	width: 75.5%;
 	height: 2px;
 	background: #056839;
@@ -120,7 +120,7 @@
 	position: absolute;
 	bottom: 100%;
 	left: 50%;
-	transform: translateX(-50%);
+	transform: translateX(50%);
 	width: 2px;
 	height: 90px;
 	background: #056839;
@@ -137,17 +137,26 @@
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
   .department_container .level-2 .card__img{
-	border: 10px solid #0bb288;
-    background-color: #fff;
-	width: 110px;
-	height: 110px;
+	border: 5px solid #056839;
+    background-color: #056839;
+	width: 120px;
+	height: 120px;
 	border-radius: 50%;
 	overflow: hidden; 
     display: flex;
     justify-content: center;
     align-items: center;
 	position: absolute;
-	transform: translate(80%, -60%);
+	transform: translate(67%, -60%);
+  }
+  .department_container .level-2 .card__img .inline__{
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	border: 5px solid #0bb288;
+	background: #0bb288;
+	overflow: hidden;
+    position: relative;
   }
   .department_container .level-2 .card__img img{
 	width: 100%; 
@@ -185,6 +194,29 @@
   
   /* MQ STYLES
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  @media screen and (max-width: 1366px) {
+	.department_container .level-2-wrapper::before {
+		content: "";
+		position: absolute;
+		top: -90px;
+		left: 12.30%;
+		width: 75.7%;
+		height: 2px;
+		background: #056839;
+	  }
+  }
+  @media screen and (max-width: 1320px) {
+	.department_container .level-2-wrapper::before {
+		content: "";
+		position: absolute;
+		top: -90px;
+		left: 12.30%;
+		width: 856px;
+		height: 2px;
+		background: #056839;
+	  }
+  }
+
   @media screen and (max-width: 1117px) {
 	
   

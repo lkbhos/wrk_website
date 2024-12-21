@@ -11,6 +11,9 @@ import TakeMoit from "./pages/TakeMoit/TakeMoit";
 import Contact from "./pages/Contact/Contact";
 import Department_leader from "./pages/Department_leader/Department_leader";
 import Flow from "./pages/Flow/Flow";
+import Vision from "./pages/Vision/Vision";
+import Hospital from "./pages/Hospital/Hospital";
+import Executive from "./pages/Executive/Executive";
 function App() {
   return (
     <HelmetProvider>
@@ -25,6 +28,9 @@ function App() {
                 <Route path="/contact" element={<Contact/>}/>
                 <Route path="/department" element={<Department_leader/>}/>
                 <Route path="/flow" element={<Flow/>}/>
+                <Route path="/vision" element={<Vision/>}/>
+                <Route path="/hospital" element={<Hospital/>}/>
+                <Route path="/executive" element={<Executive/>}/>
                 <Route path="*" element={<Navigate to="/unauthorized" />} />
                 <Route path="/unauthorized" element={<Unauthorized />} />
               </Routes>
