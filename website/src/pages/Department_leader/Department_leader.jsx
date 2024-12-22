@@ -66,9 +66,9 @@ const Department_leader = () => {
                 </li>
                 <li>
                     <div className="level-2 rectangle">
-                        <div className="card__img"><div className='inline__'><img src={import.meta.env.VITE_API_URL+'/files/'} alt="" /></div></div>
+                        <div className="card__img"><div className='inline__'><img src={import.meta.env.VITE_API_URL+'/files/ceo400_1.jpg'} alt="img" /></div></div>
                         <div className="card__name">
-                            <h4>นายแพทย์สุรธัญ คำภิบาล</h4>
+                            <h4>นายแพทย์อภิลักษณ์ เหล่าไพโรจน์</h4>
                             <p>กลุ่มงานการแพทย์</p>
                         </div>
                         <div className="card__phone">
