@@ -1,5 +1,6 @@
 import React from 'react'
 import Carousel from '../../components/Carousel/Carousel'
+import Business from '../../components/Business/Business'
 import { Helmet } from 'react-helmet-async';
 const home = () => {
   return (
@@ -15,12 +16,15 @@ const home = () => {
             <meta property="og:image" content="https://lkbhos.moph.go.th/api/files/lkbhos.jpg" /> 
         </Helmet>
         <div className="content">
-                <div className="banner">
-                    <div className="backgroung__">
-                    <Carousel/>
-                    </div>
-                </div>
+            <div className="banner">
+              <div className="backgroung__">
+                  <Carousel/>
+              </div>
             </div>
+        </div>
+        <div className="contents__container">
+            <Business/>
+        </div>
     </div>
   )
 }

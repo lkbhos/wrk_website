@@ -14,6 +14,7 @@ import Flow from "./pages/Flow/Flow";
 import Vision from "./pages/Vision/Vision";
 import Hospital from "./pages/Hospital/Hospital";
 import Executive from "./pages/Executive/Executive";
+import Document from "./pages/Document/Document";
 function App() {
   return (
     <HelmetProvider>
@@ -31,6 +32,7 @@ function App() {
                 <Route path="/vision" element={<Vision/>}/>
                 <Route path="/hospital" element={<Hospital/>}/>
                 <Route path="/executive" element={<Executive/>}/>
+                <Route path="/doc" element={<Document/>}/>
                 <Route path="*" element={<Navigate to="/unauthorized" />} />
                 <Route path="/unauthorized" element={<Unauthorized />} />
               </Routes>
