@@ -1,4 +1,6 @@
-
+.vision__content{
+    padding-top: 16px;
+}
 .vision__group:last-child{
     margin-bottom: 3.5rem;
 }
@@ -28,6 +30,6 @@
 }
 @media screen and (max-width: 1118px){
     .vision__content{
-        padding: 0 15px;
+        padding: 15px;
     }
 }

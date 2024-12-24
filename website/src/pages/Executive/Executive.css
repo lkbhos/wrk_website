@@ -1,5 +1,6 @@
 .executive__content{
     margin-bottom: 2.5rem;
+    padding-top: 15px;
 }
 .executive__group:first-child{
     border-top: 2px solid silver;
@@ -37,7 +38,7 @@
 }
 @media screen and (max-width: 1118px){
     .executive__content{
-        padding: 0 15px;
+        padding: 15px;
     }
 }
 

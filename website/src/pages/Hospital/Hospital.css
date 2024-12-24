@@ -1,9 +1,12 @@
 .hospital__container{
     margin-bottom: 2.5rem;
 }
+.hospital__content{
+    padding-top: 15px;
+}
 @media screen and (max-width: 1118px) {
     .hospital__content{
-        padding: 0 15px;
+        padding:15px;
     }
 }
 .hospital__group h2{
