@@ -1,10 +1,11 @@
 import React from "react";
 import "./Vision.css";
 import { Helmet } from "react-helmet-async";
-
+import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
 const Vision = () => {
   return (
     <div className="contents__container">
+      <Breadcrumbs customTitles={{}} />
       <Helmet>
         <title>วิสัยทัศน์ และพันธกิจ</title>
         <meta name="title" content="โรงพยาบาลลานกระบือ" />

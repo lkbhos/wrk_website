@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import './Moit.css'
 import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
 import axios from 'axios'
 
 const moit = () => {
@@ -44,6 +45,7 @@ const moit = () => {
             <meta property="og:image" content="https://lkbhos.moph.go.th/api/files/lkbhos.jpg" /> 
         </Helmet>
         <div className='contents__container'>
+            <Breadcrumbs customTitles={{ [id] : "ปี "+id}} />
             <div className='moit_content'>
                 <div className='hero' style={{ backgroundImage: `url(${import.meta.env.VITE_API_URL+'/files/bg_head.jpg'})` }}>
                   <div className='hero-content'>

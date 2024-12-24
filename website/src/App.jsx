@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import Navbar from "./components/Navbar/Navbar"
@@ -7,6 +7,7 @@ import Home from "./pages/Home/Home";
 import Moit from "./pages/Moit/Moit";
 import Unauthorized from './pages/Unauthorized/Unauthorized';
 import Breadcrumbs from './components/Breadcrumbs/Breadcrumbs';
+import Layout  from './components/Layout/Layout'
 import TakeMoit from "./pages/TakeMoit/TakeMoit";
 import Contact from "./pages/Contact/Contact";
 import Department_leader from "./pages/Department_leader/Department_leader";
@@ -15,13 +16,15 @@ import Vision from "./pages/Vision/Vision";
 import Hospital from "./pages/Hospital/Hospital";
 import Executive from "./pages/Executive/Executive";
 import Document from "./pages/Document/Document";
+
 function App() {
+  const [customTitles, setCustomTitles] = useState({})
   return (
     <HelmetProvider>
       <Router>
         <Navbar/>
           <div className="container__content">
-            <div className="bread__"><Breadcrumbs /></div>
+          <Layout customTitles={customTitles}>
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/moit/:id" element={<Moit/>}/>
@@ -36,8 +39,10 @@ function App() {
                 <Route path="*" element={<Navigate to="/unauthorized" />} />
                 <Route path="/unauthorized" element={<Unauthorized />} />
               </Routes>
+            </Layout>
           </div> 
         <Footpage/>
+        
       </Router>
     </HelmetProvider>
   )

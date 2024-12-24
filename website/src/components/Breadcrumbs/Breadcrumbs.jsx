@@ -1,15 +1,17 @@
 import React from 'react';
-import { useLocation, Link } from 'react-router-dom';
+import { useLocation, Link, useParams } from 'react-router-dom';
 import './Breadcrumbs.css'
 import titles from './Titles.json'
-const Breadcrumbs = () => {
+
+const Breadcrumbs = ({ customTitles = {}}) => {
   const location = useLocation();
+  const { id, year,name } = useParams()
   const pathnames = location.pathname.split('/').filter((x) => x);
-  if (location.pathname === '/' || location.pathname === '/unauthorized') {
+  if (location.pathname === '/' || location.pathname === '/unauthorized'){
     return null;
   }
   const getTitle = (pathname) => { 
-    return titles[pathname] || pathname; 
+    return  customTitles[pathname] || titles[pathname] || pathname;
   };
   return (
       <nav aria-label="breadcrumb" >

@@ -1,9 +1,11 @@
 import React from 'react'
 import './Department_leader.css'
 import { Helmet } from 'react-helmet-async'
+import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs'
 const Department_leader = () => {
   return (
       <div className='contents__container'>
+        <Breadcrumbs customTitles={{}} />
         <Helmet>
         <title>คณะผู้บริหาร</title>
             <meta name="title" content="โรงพยาบาลลานกระบือ" />

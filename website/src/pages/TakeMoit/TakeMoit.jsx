@@ -2,15 +2,14 @@ import React, { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import './TakeMoit.css'
 import PdfFromUrl from '../../components/PdfFromUrl/PdfFromUrl'
+import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs'
 import axios from 'axios'
 import { useParams, useNavigate } from 'react-router-dom'
-
 const TakeMoit = () => {
     const [data , setData] = useState([])
     const { id , name } = useParams()
     const navigate = useNavigate()
     useEffect(() => {
-        
         const fetchdata = async () => {
             try{
             
@@ -21,6 +20,7 @@ const TakeMoit = () => {
                     navigate('/unauthorized')
                   }
                   setData(resp.data)
+                  
                   
             }catch(err){
                 navigate('/unauthorized')
@@ -52,6 +52,7 @@ const TakeMoit = () => {
   return (
     <div>
         {data.map((item)=>{
+            const nameurl = "ข้อ" + data[0].childrens.subtitle.title
             const namepdf = item.childrens.subtitle.pdfurl || item.childrens.pdfurl
             const pdfUrl = import.meta.env.VITE_API_URL+'/files/'+namepdf
             const filename = item.childrens.nums||item.childrens.subtitle.nums+"_moit_11234.pdf"
@@ -68,6 +69,7 @@ const TakeMoit = () => {
                     <meta property="og:image" content="https://lkbhos.moph.go.th/api/files/lkbhos.jpg" /> 
                 </Helmet>
                 <div className="contents__container">
+                <Breadcrumbs customTitles={{ "takemoit": 'ข้อมูล MOIT',[id] : "ปี "+id, [name] : "ข้อที่"+data[0].childrens.subtitle.nums || data[0].childrens.nums}} />
                     <div className="takemoit_content">
                         <div className='hero' style={{ backgroundImage: `url(${import.meta.env.VITE_API_URL+'/files/bg_head.jpg'})` }}>
                             <div className='hero-content'>

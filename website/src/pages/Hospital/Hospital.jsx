@@ -1,9 +1,11 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
+import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs'
 import './Hospital.css'
 const Hospital = () => {
   return (
     <div className='contents__container'>
+      <Breadcrumbs customTitles={{}} />
           <Helmet>
             <title>ประวัติโรงพยาบาล</title>
             <meta name="title" content="โรงพยาบาลลานกระบือ" />

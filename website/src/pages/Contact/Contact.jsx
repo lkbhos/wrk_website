@@ -1,9 +1,11 @@
 import React from 'react'
 import './Contact.css'
 import { Helmet } from 'react-helmet-async'
+import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs'
 const Contact = () => {
   return (
     <div className="contents__container">
+        <Breadcrumbs customTitles={{}} />
         <Helmet>
             <title>แผนที่ | ติดต่อสอบถาม</title>
             <meta name="title" content="โรงพยาบาลลานกระบือ" />

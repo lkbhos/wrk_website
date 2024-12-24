@@ -1,10 +1,12 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
 import './Executive.css'
+import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs'
 import data from './data.json'
 const Executive = () => {
   return (
     <div className='contents__container'>
+      <Breadcrumbs customTitles={{}} />
       <Helmet>
                 <title>ทำเนียบผู้บริหาร</title>
                 <meta name="title" content="โรงพยาบาลลานกระบือ" />
