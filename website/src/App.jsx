@@ -16,6 +16,7 @@ import Vision from "./pages/Vision/Vision";
 import Hospital from "./pages/Hospital/Hospital";
 import Executive from "./pages/Executive/Executive";
 import Document from "./pages/Document/Document";
+import Inquiry from "./pages/Inquiry/Inquiry";
 
 function App() {
   const [customTitles, setCustomTitles] = useState({})
@@ -36,6 +37,7 @@ function App() {
                 <Route path="/hospital" element={<Hospital/>}/>
                 <Route path="/executive" element={<Executive/>}/>
                 <Route path="/doc" element={<Document/>}/>
+                <Route path="/contact/inquiry" element={<Inquiry/>}/>
                 <Route path="*" element={<Navigate to="/unauthorized" />} />
                 <Route path="/unauthorized" element={<Unauthorized />} />
               </Routes>

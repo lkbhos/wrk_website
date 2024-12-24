@@ -1,0 +1,82 @@
+.inquiry__container{
+    margin: 2.5rem 0;
+}
+.inquiry__content{
+    padding: 15px 40px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    margin: 0 auto;
+  }
+.form-container label{
+    color: #056839;
+}
+  .input-field {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    
+  }
+
+  
+  .input-field:hover,
+  .input-field:focus {
+    border-color: #056839;
+    box-shadow: 0 0 5px rgba(1, 80, 34, 0.5);
+  }
+  
+  textarea.input-field {
+    resize: vertical;
+  }
+  
+  .consent label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: black;
+    font-weight: 350;
+  }
+  .consent label a{
+    color: #056839;
+  }
+  .btn-submit {
+    margin: 0 auto;
+    display: inline-block;
+    background-color: #056839; /* สีเขียวแบบในภาพ */
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 40%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #008f6b; /* สีเข้มขึ้นเมื่อ hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-submit:active {
+    background-color: #007a5d; /* สีเข้มขึ้นเมื่อคลิก */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media screen and (max-width: 1118px){
+    .inquiry__content{
+        width: 100%;
+        padding: 15px;
+    }
+  }

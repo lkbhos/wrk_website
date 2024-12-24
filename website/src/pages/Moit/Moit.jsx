@@ -49,7 +49,7 @@ const moit = () => {
             <div className='moit_content'>
                 <div className='hero' style={{ backgroundImage: `url(${import.meta.env.VITE_API_URL+'/files/bg_head.jpg'})` }}>
                   <div className='hero-content'>
-                     <div className='moit__head'>
+                     <div className='hero__head'>
                         <h2>MITAS (MOPH Integrity and Transparency Assessment System)</h2>
                         <h2>ปีงบประมาณ {id}</h2>
                         <p><hr /></p>

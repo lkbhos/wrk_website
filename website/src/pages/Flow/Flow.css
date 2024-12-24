@@ -47,12 +47,12 @@
 	left: 50%;
 	transform: translateX(-50%);
 	width: 2px;
-	height: 1340px;
+	height: 1400px;
 	background: #056839;
   } 
   
   .flow__container .level-2-wrapper {
-	margin-top: 40px;
+	margin-top: 60px;
 	position: relative;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -169,7 +169,7 @@
         left: 50%;
         transform: translateX(-50%);
         width: 2px;
-        height: 1305px;
+        height: 1365px;
         background: #056839;
       }
   }
