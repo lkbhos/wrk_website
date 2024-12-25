@@ -19,15 +19,19 @@ const PdfFromUrl = ({ pdfUrl }) => {
         const imageList = [];
         for (let i = 1; i <= pdf.numPages; i++) {
           const page = await pdf.getPage(i);
-          const viewport = page.getViewport({ scale: 3 });
+
+          const viewport = page.getViewport({ scale: 1.0 });
+          const scale = containerWidth / viewport.width; 
+          const adjustedViewport = page.getViewport({ scale });
+
           const canvas = document.createElement("canvas");
           const context = canvas.getContext("2d");
-          canvas.width = viewport.width;
-          canvas.height = viewport.height;
+          canvas.width = adjustedViewport.width;
+          canvas.height = adjustedViewport.height;
 
           const renderContext = {
             canvasContext: context,
-            viewport: viewport,
+            viewport:adjustedViewport,
           };
 
           await page.render(renderContext).promise;
