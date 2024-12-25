@@ -17,6 +17,7 @@ const PdfFromUrl = ({ pdfUrl }) => {
         const pdf = await pdfjsLib.getDocument(pdfData).promise;
 
         const imageList = [];
+        const containerWidth = document.body.clientWidth;
         for (let i = 1; i <= pdf.numPages; i++) {
           const page = await pdf.getPage(i);
 
