@@ -69,7 +69,7 @@ const TakeMoit = () => {
                     <meta property="og:image" content="https://lkbhos.moph.go.th/api/files/lkbhos.jpg" /> 
                 </Helmet>
                 <div className="contents__container">
-                <Breadcrumbs customTitles={{ "takemoit": 'ข้อมูล MOIT',[id] : "ปี "+id, [name] : "ข้อที่"+data[0].childrens.subtitle.nums || data[0].childrens.nums}} />
+                <Breadcrumbs customTitles={{ "takemoit": 'ข้อมูล MOIT',[id] : "ปี "+id, [name] : "ข้อที่ "+data[0].childrens.nums || data[0].childrens.subtitle.nums}} />
                     <div className="takemoit_content">
                         <div className='hero' style={{ backgroundImage: `url(${import.meta.env.VITE_API_URL+'/files/bg_head.jpg'})` }}>
                             <div className='hero-content'>
