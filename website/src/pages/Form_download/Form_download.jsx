@@ -31,11 +31,12 @@ const Form_download = () => {
     const handleDownload = async (pdf,filename) =>{
         if (!pdf) {
             alert("ไม่มีไฟล์ให้ดาวน์โหลด");
-            return;
-          }
+        return;
+        }
         try{
             const respone = await fetch(pdf)
-            if (!respone.ok) {
+            if (response.status !== 200) {
+                alert("ไม่สามารถดาวน์โหลดไฟล์ได้")
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
             const blob = await respone.blob()
