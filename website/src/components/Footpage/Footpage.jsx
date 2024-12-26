@@ -22,12 +22,12 @@ const Footpage = () => {
                         <img src={import.meta.env.VITE_API_URL+'/files/mail.png'} alt="call_img" />
                         <p>สอบถามข้อมูลเพิ่มเติมผ่าน E-mail</p>
                         <p>lkbhos.kp@gmail.com</p>
-                        <a href="/contact/inquiry">ติดต่อ-สอบถาม</a>
+                        <a href="/contact/inquiry">สอบถาม-ร้องเรียน</a>
                     </div>
                     <div className='contact__list'>
                         <img src={import.meta.env.VITE_API_URL+'/files/loca.png'} alt="call_img" />
                         <p>แผนที่โรงพยาบาล</p>
-                        <a href="/contact">ดูแผนที่</a>
+                        <a href="/contact">ติดต่อ</a>
                     </div>
                 </div>
             </div>
