@@ -79,7 +79,7 @@ const Form_download = () => {
                                     <div className='form__group' key={i}>
                                         <div className='form__name'>
                                             <i class="ri-arrow-right-s-fill"></i>
-                                            <div onClick={() => handleDownload(`${import.meta.env.VITE_API_URL}/files/${child.pdf_name}`,`${child.title}.pdf`)}><p>{child.title}</p></div>
+                                            <div onClick={() => handleDownload(`${import.meta.env.VITE_API_URL}/files/${child.file_name}`,`${child.title}.${child.file_type}`)}><p>{child.title}</p></div>
                                         </div>
                                         <small>แก้ไขเมื่อ. {formattedDate}</small>
                                     </div>

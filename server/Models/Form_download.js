@@ -5,7 +5,10 @@ const childrenSchema = mongoose.Schema({
     "title":{
         type : String
     },
-    "pdf_name":{
+    "file_name":{
+        type : String
+    },
+    "file_type":{
         type : String
     },
     "make_by":{
