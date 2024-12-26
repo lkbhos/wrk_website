@@ -35,9 +35,9 @@ const Form_download = () => {
         }
         try{
             const respone = await fetch(pdf)
-            if (response.status !== 200) {
-                alert("ไม่สามารถดาวน์โหลดไฟล์ได้")
-                throw new Error(`HTTP error! Status: ${response.status}`);
+            if (respone.status != 200) {
+                alert("ไม่สามารถดาวน์โหลดไฟล์ได้ !")
+                throw new Error(`HTTP error! Status: ${respone.status}`);
             }
             const blob = await respone.blob()
             const url = window.URL.createObjectURL(blob)
