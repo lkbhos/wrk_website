@@ -29,6 +29,10 @@ const Form_download = () => {
 
 
     const handleDownload = async (pdf,filename) =>{
+        if (!pdf) {
+            alert("ไม่มีไฟล์ให้ดาวน์โหลด");
+            return;
+          }
         try{
             const respone = await fetch(pdf)
             if (!respone.ok) {
