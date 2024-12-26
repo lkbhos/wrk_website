@@ -7,10 +7,10 @@ exports.GetFileurl = async (req,res) =>{
         if (fs.existsSync(filePath)) {
             res.sendfile(filePath)
           } else {
-            res.send("Files NOT FOUND !!")
-            console.log('File does not exist.');
+            res.status(404)
+            console.log("404 File not found !")
           }  
     }catch(err){
-        res.status(404).json({ message:'Files Not found'})
+        res.status(500).json({ message:'Sever Error !'})
     }
 }
