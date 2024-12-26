@@ -18,6 +18,7 @@ import Executive from "./pages/Executive/Executive";
 import Document from "./pages/Document/Document";
 import Inquiry from "./pages/Inquiry/Inquiry";
 import Doclist from "./pages/Doclist/Doclist";
+import Form_download from "./pages/Form_download/Form_download";
 
 function App() {
   const [customTitles, setCustomTitles] = useState({})
@@ -37,9 +38,10 @@ function App() {
                 <Route path="/vision" element={<Vision/>}/>
                 <Route path="/hospital" element={<Hospital/>}/>
                 <Route path="/executive" element={<Executive/>}/>
-                <Route path="/:list" element={<Document/>}/>
-                <Route path="/:list/:id" element={<Doclist/>}/>
+                <Route path="/law" element={<Document/>}/>
+                <Route path="/law/:id" element={<Doclist/>}/>
                 <Route path="/contact/inquiry" element={<Inquiry/>}/>
+                <Route path="/form_download" element={<Form_download/>}/>
                 <Route path="*" element={<Navigate to="/unauthorized" />} />
                 <Route path="/unauthorized" element={<Unauthorized />} />
               </Routes>
