@@ -1,0 +1,78 @@
+.wi__container{
+    margin: 1.5rem 0;
+    position: relative;
+  }
+  .wi__title{
+      background-color: #646569;
+      height: 150px;
+      color: #fff;
+      padding-top: 2rem;
+      z-index: 1;
+      position: relative;
+      text-align: center;
+  }
+  .wi__head h2{
+      font-size: clamp(1rem, 0.91rem + 0.45vw, 1.45rem);
+  }
+  .wi__title hr{
+      margin: 0 auto;
+      width: 10%;
+      height: 3px;
+      background-color: #fff;
+  }
+  .wi__content{
+      width: 85%;
+      margin: 0 auto;
+      position: relative; 
+      z-index: 2; 
+      top: -30px; 
+      background-color: #fff;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .wi__content .wi__download{
+      padding: 10px 20px;
+  }
+  .wi__group{
+      border-bottom: 1px solid Silver;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 0;
+  }
+  .wi__group:last-child{
+      border-bottom: none;
+  }
+  .wi__name a{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      color: #727377;
+      text-shadow: 0px 1px 1px silver;
+  }
+  .wi__name p{
+      font-size: clamp(0.7rem, 0.64rem + 0.3vw, 1rem);
+  }
+  .wi__name a:hover{
+      color: #056839;
+  }
+  .wi__group small{
+      color: silver;
+      margin-left: 15px;
+      font-size: clamp(0.35rem, 0.28rem + 0.35vw, 0.7rem);
+  }
+  @media (max-width: 1118px){
+      .wi__content{
+          width: 95%;
+      }
+      .wi__content .wi__download{
+          padding: 10px;
+      }
+      .wi__group{
+          padding: 2.5px 0;
+      }
+      .wi__title{
+          height: 120px;
+      }
+  }

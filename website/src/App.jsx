@@ -18,6 +18,7 @@ import Executive from "./pages/Executive/Executive";
 import Document from "./pages/Document/Document";
 import Inquiry from "./pages/Inquiry/Inquiry";
 import Doclist from "./pages/Doclist/Doclist";
+import Wi from "./pages/Wi/Wi";
 import Form_download from "./pages/Form_download/Form_download";
 
 function App() {
@@ -39,9 +40,10 @@ function App() {
                 <Route path="/hospital" element={<Hospital/>}/>
                 <Route path="/executive" element={<Executive/>}/>
                 <Route path="/law" element={<Document/>}/>
-                <Route path="/law/:id" element={<Doclist/>}/>
+                <Route path="/wi/:list/:id" element={<Doclist/>}/>
                 <Route path="/contact/inquiry" element={<Inquiry/>}/>
                 <Route path="/form_download" element={<Form_download/>}/>
+                <Route path="/wi" element={<Wi/>}/>
                 <Route path="*" element={<Navigate to="/unauthorized" />} />
                 <Route path="/unauthorized" element={<Unauthorized />} />
               </Routes>
