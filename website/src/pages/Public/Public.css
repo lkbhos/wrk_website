@@ -1,0 +1,6 @@
+.form__download .form__name a{
+    color: #727377;
+}
+.form__download .form__name a:hover{
+    color: #056839;
+}

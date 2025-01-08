@@ -20,6 +20,8 @@ import Inquiry from "./pages/Inquiry/Inquiry";
 import Doclist from "./pages/Doclist/Doclist";
 import Wi from "./pages/Wi/Wi";
 import Form_download from "./pages/Form_download/Form_download";
+import Public from "./pages/Public/Public";
+import Docs from "./pages/Docs/Docs";
 
 function App() {
   const [customTitles, setCustomTitles] = useState({})
@@ -44,6 +46,8 @@ function App() {
                 <Route path="/contact/inquiry" element={<Inquiry/>}/>
                 <Route path="/form_download" element={<Form_download/>}/>
                 <Route path="/wi" element={<Wi/>}/>
+                <Route path="/public" element={<Public/>}/>
+                <Route path="/public/:id" element={<Docs/>}/>
                 <Route path="*" element={<Navigate to="/unauthorized" />} />
                 <Route path="/unauthorized" element={<Unauthorized />} />
               </Routes>
