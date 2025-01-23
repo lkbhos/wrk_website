@@ -56,8 +56,7 @@ body {
 .nav__toggle {
   position: relative;
   width: 32px;
-  height: 32px;
-  
+  height: 32px; 
 }
 .nav__toggle-menu, .nav__toggle-close {
   font-size: 1.25rem;

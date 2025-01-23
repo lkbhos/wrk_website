@@ -32,7 +32,7 @@ const Public = () => {
                                             <i class="ri-arrow-right-s-fill"></i>
                                             <div><a href="/public/11234abc7589rDFG"><p>รายงานงบการเงินประจำปี 2567</p></a></div>
                                         </div>
-                                        <small>ประกาศเมื่อ. 15/09/67</small>
+                                        <small>ประกาศเมื่อ. 15/11/67</small>
                                     </div>
                         </div>
             </div>    

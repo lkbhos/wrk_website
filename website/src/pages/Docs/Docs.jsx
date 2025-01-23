@@ -30,7 +30,7 @@ const Docs = () => {
             <PdfFromUrl pdfUrl={pdfUrl}/>
             <div className='credit_moit'>
                             <p>โดย.อภิสรา(นักวิชาการเงินและบัญชี)</p>
-                            <p>เผยแพร่. 15/09/67</p>
+                            <p>เผยแพร่. 15/11/67</p>
                         </div>
         </div>
     </div>
